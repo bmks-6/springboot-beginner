@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Spring Boot App</title>
-
+    <title>Card - Spring Boot App</title>
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/card.css">
 </head>
-
 <body>
     <div class="navbar">
         <a href="/">Home</a>
@@ -19,11 +17,21 @@
     </div>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the home page of your Spring Boot app. Use the navigation bar to visit the Card, Toggle, or RandomUser pages.</p>
+        <section class="card-page">
+            <h1>Card Page</h1>
+            <div class="card">
+                <img id="userImage" src="img/john.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 id="userName">
+                        <b>John Doe</b>
+                    </h4>
+                    <p id="userGender">Male</p>
+                </div>
+            </div>
+           
         </section>
     </main>
 
+    <script src="js/site.js"></script>
 </body>
 </html>

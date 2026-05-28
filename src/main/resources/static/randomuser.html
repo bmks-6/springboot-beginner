@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomUser - Spring Boot App</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/card.html">Card</a>
+        <a href="/toggle.html">Toggle</a>
+        <a href="/randomuser.html">RandomUser</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <main>
+        <section class="card-page">
+            <h1>Random User</h1>
+            <button onclick="getAndDisplayRandomUser()">Load random user</button>
+            <div class="card">
+                <img id="userImage" src="img/john.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 id="userName"><b>John Doe</b></h4>
+                    <p id="userGender">Male</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/randomuser.js"></script>
+</body>
+</html>
